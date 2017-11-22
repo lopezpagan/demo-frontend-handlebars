@@ -13,9 +13,9 @@ var data = {
         lists: [
             { name: 'Ponce' },
             { name: 'Fajardo' },
-            { name: 'Mayagüez' },
-            { name: 'Humacao' }
-            { name: 'Arecibo' },
+            { name: 'Mayagüez' }, 
+            { name: 'Humacao' },
+            { name: 'Arecibo' }
         ]
     }
 
