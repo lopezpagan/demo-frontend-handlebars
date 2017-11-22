@@ -1,0 +1,33 @@
+{
+  "name": "demo-frontend-handlebars",
+  "version": "1.0.0",
+  "description": "Font-end handlebars setup",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lopezpagan/demos/demo-frontend-handlebars.git"
+  },
+  "author": "Tony López Pagán",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify-handlebars": "^1.0.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-data": "^1.2.1",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "handlebars": "^4.0.11",
+    "imagemin-pngquant": "^4.2.0",
+    "sw-precache": "^5.2.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,103 @@
+/**
+ * Menu Module
+ */
+nav {
+    
+    &.navbar {
+        height: 40px; 
+        padding: 15px;
+        
+        .brand { 
+            float: left;
+            margin-right: 15px;
+            
+            img.logo {
+                width: 100%;
+                max-width: 34px;
+                height: auto;
+            }
+        }
+        .primary-menu {
+            float: left; 
+            margin-right: 15px; 
+            
+            li {
+                list-style: none;
+                float: left;
+                margin-right: 5px;
+                padding: 7px 12px;
+            }
+        } 
+        &:last-child {
+            margin-right: -15px;
+        }
+    }
+}
+
+/**
+ * Card Module
+ */
+
+.card {
+    max-width: 280px;
+    width: 30%;
+    margin: 1%;
+    float: left;
+    
+    .card-wrapper {
+        padding: 10px;
+        
+        .c-title {
+            font-weight: bold;
+        }
+        .c-img {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .c-content {
+            font-size: 8px;
+            text-align: justify;
+        }
+    }
+}
+
+/**
+ * List Module
+ */
+
+.list {    
+    display: block;
+    padding: 5px;
+    
+    .list-wrapper {   
+        display: inline-block;
+        width: 100%;
+        
+        .l-image {
+            width: 30%;
+            max-width: 80px;
+            height: 80px; 
+            float: left;
+            
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+            
+        .l-title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .l-content { 
+            width: auto;
+            overflow: hidden;
+            font-size: 12px;
+            padding: 7px 12px;
+            text-align: justify; 
+        }
+    }
+}

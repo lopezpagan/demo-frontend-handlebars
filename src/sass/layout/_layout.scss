@@ -1,0 +1,55 @@
+nav {      
+    clear: both;
+}
+
+.main {
+    width: 100%; 
+    
+    .header {       
+        display: block;
+        min-height: 120px;
+        padding: 15px;
+    }
+    
+    .content {
+        width: 70%;
+        display: block;
+        float: left;
+        
+        .services {
+            display: block;
+            padding: 30px 15px;
+        }
+        
+        .cards {
+            display: block;
+        }
+        
+        .lists {
+            display: block;
+        }
+    }
+    .sidebar {
+        width: 30%;
+        float: left;
+        
+        .s-content {
+            padding: 35px 15px;
+            
+            .s-title {
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+        
+        .lists {
+            display: block;
+        }
+    }
+ 
+    .footer {
+        clear: both;
+        min-height: 120px;
+        padding: 15px;
+    }
+}
