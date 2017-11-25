@@ -1,4 +1,14 @@
 # How to use this git
+
+To clone repo:
+Run *git clone https://github.com/lopezpagan/demo-frontend-handlebars.git*
+
+Go to project folder:
+Run *cd project-name*
+
+Then install:
+Run *npm install*
+
 To compile only:
 Run *gulp* 
 
