@@ -1,0 +1,50 @@
+nav {      
+    clear: both;
+}
+
+.main { 
+    
+    .header {       
+        display: block; 
+         
+         .page-header {
+             min-height: 300px;
+             display: flex;
+             flex-direction: column;
+             align-content: left;
+             justify-content: center;
+             border-bottom: 0;
+         }
+    }
+    
+    .content {         
+        .cards {
+            display: block;
+        }
+        
+        .lists {
+            display: block;
+        }
+    }
+     
+    .sidebar {        
+        .s-content {
+        }
+        
+        .lists {
+            display: block;
+        }
+    }
+ 
+    .footer {
+        clear: both;
+        
+         .copyright { 
+             height: 150px;
+             display: flex;
+             flex-direction: column;
+             align-content: left;
+             justify-content: center;
+         }
+    }
+}

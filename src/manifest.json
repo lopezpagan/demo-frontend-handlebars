@@ -1,6 +1,6 @@
 {
-  "short_name": "font-end-basic",
-  "name": "Front-End Basic",
+  "short_name": "demo-frontend-handlebars",
+  "name": "Demo Front-End Handlebars",
   "start_url": "/",
   "lang": "en",
   "dir": "ltr",
@@ -23,11 +23,11 @@
     {
       "src": "\/assets\/img\/logo-512x512.png",
       "sizes": "512x512",
-      "type": "image\/png"
+      "type": "image\/png" 
     }
   ],
   "background_color": "royalblue",
   "theme_color": "#FCFCFC",
   "display": "standalone",
-  "orientation": "natural" 
+  "orientation": "natural"  
 }

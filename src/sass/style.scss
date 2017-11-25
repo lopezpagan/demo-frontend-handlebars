@@ -1,25 +1,29 @@
 /**
  * Vendor
  */
-
-@import "susy";
-@import "su";
+@import "vendor/susy";
+@import "vendor/su";
+@import "vendor/bootstrap";
 
 /**
  * Setup
  */
-
-/*@import "reset";*/
-@import "mixins";
-@import "variables";
-@import "fonts";
+//@import "default/reset";
+//@import "default/mixins";
+@import "default/variables";
 
 /**
  * Page Parts
  */
-
-@import "base/_base";
-@import "layout/_layout";
-@import "modules/_modules";
-@import "state/_state";
-@import "theme/_theme";
+// Basic styles
+@import "_base/base";
+// Layout styles
+@import "_layout/layout";
+// Modules styles
+@import "_modules/modules";
+//States style
+@import "_state/state";
+//Fonts styles
+@import "_theme/fonts";
+// Theme styles
+@import "_theme/theme";  
