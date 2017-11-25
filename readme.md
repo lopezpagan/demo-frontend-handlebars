@@ -1,5 +1,9 @@
 # How to use this git
-Run *gulp*
+To compile only:
+Run *gulp* 
+
+To watch and start server:
+Run *gulp watch webserver*
 
 * about.html (basic html with service worker script included)
 * manifiest.json (for pwa)
