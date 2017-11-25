@@ -20,11 +20,13 @@
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-connect": "^5.0.0",
     "gulp-data": "^1.2.1",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^2.3.0",
     "gulp-livereload": "^3.8.0",
     "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-uglifyjs": "^0.6.2",
+    "gulp-webserver": "^0.9.1",
     "handlebars": "^4.0.11",
     "imagemin-pngquant": "^4.2.0",
     "sw-precache": "^5.2.0"
