@@ -161,4 +161,4 @@ gulp.task('webserver', function() {
     }));
 });
     
-gulp.task('default', ['dbs', 'sass', 'uglify', 'imagemin', 'handlebars', 'manifest', 'generate-service-worker', 'htmlmin']);
+gulp.task('default', ['dbs', 'handlebars', 'sass', 'uglify', 'imagemin', 'manifest', 'generate-service-worker', 'htmlmin']);

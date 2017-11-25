@@ -2,12 +2,13 @@ nav {
     clear: both;
 }
 
-.main { 
+.main {  
     
     .header {       
         display: block; 
          
          .page-header {
+             width: 100%;
              min-height: 300px;
              display: flex;
              flex-direction: column;
