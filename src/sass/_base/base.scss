@@ -9,9 +9,10 @@ input[type=text] {
     border: 1px solid #999;
 }
 
+p { margin: 0; }
 a {
-    color: #039;
+    color: #666;
     &:hover {
-        color: #03C;
+        color: #666;
     }
 }

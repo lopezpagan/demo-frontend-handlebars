@@ -125,14 +125,14 @@ gulp.task('watch', function() {
      
     livereload.listen();
      
-    gulp.watch(src+'dbs/**/*.js', ['dbs']);
+    //gulp.watch(src+'dbs/**/*.js', ['dbs']);
     gulp.watch(src+'**/*.handlebars', ['handlebars']);
     gulp.watch(src+'sass/**/*.scss', ['sass']);
     gulp.watch(src+'lib/**/*.js', ['uglify']);
     gulp.watch(src+'assets/js/**/*.js', ['uglify']);
     gulp.watch(src+'assets/img/**/*', ['imagemin']);
-    gulp.watch(src+'manifest.json', ['manifest']);
-    gulp.watch([src+'*.html', src+'**/*.handlebars'], ['generate-service-worker']);
+    //gulp.watch(src+'manifest.json', ['manifest']);
+    gulp.watch([src+'*.html', src+'**/*.handlebars']/*, ['generate-service-worker']*/);
     gulp.watch(src+'*.html', ['htmlmin']);
     
     gulp.watch([dest+'assets/css/style.css', dest+'assets/js/app.js', dest+'sw.js', dest+'assets/img/**/*', dest+'manifest.json', dest+'*.html'],

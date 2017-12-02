@@ -11,8 +11,6 @@ body {
 /****************
  * Layout
  ****************/
-nav {
-}
 
 .main {
     
@@ -40,7 +38,7 @@ nav {
  
     .footer {
         background-color: #333;
-        color: #fcfcfc;
+        color: #fcfcfc; 
     }
 }
 
@@ -49,15 +47,42 @@ nav {
  ****************/
 nav {
     
-    &.navbar {        
-        .brand { 
-            border: 1px solid #e4e4e4;
+    &.navbar {  
+         background-color: #333; 
+         margin-bottom: 0;
+         
+        .navbar-brand { 
+             
         }
-        .primary-menu {            
-            li {
-                border: 1px solid #e4e4e4;
-            }
-        } 
+     
+         ul.navbar-nav {
+              color: #e4e4e4; 
+              
+              li {                    
+                   color: #e4e4e4;
+                   
+                   a {
+                        background-color: transparent;
+                        color: #e4e4e4;
+                        &:hover {                   
+                             background-color: transparent;
+                             color: yellow;
+                             transition: color .5s fade;
+                        }
+                        &:active {                   
+                             background-color: transparent;
+                             color: #fff;
+                        }
+                   }
+              }
+         }
+         
+         .navbar-toggle {
+              .icon-bar {
+                   background-color: #f4f4f4; 
+              }
+         }
+         
     }
 }
 
@@ -79,14 +104,13 @@ nav {
 
 .card {    
     .card-wrapper {
+         border: 1px solid #f4f4f4;
+         box-shadow: 0 24px 22px #e5e5e5;
+         border-radius: 4px;
+         overflow: hidden;
                 
         .c-title { color: #091AC5; }
-        .c-img { 
-             border: 1px solid #f4f4f4;
-             box-shadow: 0 4px 2px #f4f4f4;         
-             border-radius: 4px;
-             overflow: hidden;
-         }
+        .c-img {}
         .c-content { color: #666; }
     }
 }
@@ -107,12 +131,8 @@ nav {
      }
 }
 
-.list {    
-    display: block;
-    
+.list {        
     .list-wrapper {   
-        display: inline-block;
-        width: 100%;
         
         .l-image {
             border: 1px solid #ccc;

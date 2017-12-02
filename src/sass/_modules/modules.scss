@@ -4,32 +4,16 @@
 nav {
     
     &.navbar {
-        height: 40px; 
-        padding: 15px;
         
-        .brand { 
+        .navbar-brand { 
             float: left;
             margin-right: 15px;
-            
+                         
             img.logo {
                 width: 100%;
                 max-width: 34px;
                 height: auto;
             }
-        } 
-        .primary-menu {
-            float: left; 
-            margin-right: 15px; 
-            
-            li {
-                list-style: none;
-                float: left;
-                margin-right: 5px;
-                padding: 7px 12px;
-            }
-        } 
-        &:last-child {
-            margin-right: -15px;
         }
     }
 }
@@ -42,9 +26,16 @@ nav {
     margin-bottom: 15px;
     
     .card-wrapper {
-        
+     
+          &:hover {
+              box-shadow: 0 14px 12px #d4d4d4;
+              transition: margin .5 fade;
+
+          }
+         
         .c-title {
-            font-weight: bold;
+             font-weight: bold;
+             font-size: 22px;
              padding: 15px 10px 5px;
         }
         .c-img {
@@ -54,8 +45,8 @@ nav {
             }
         }
         .c-content {
-            font-size: 8px;
-            text-align: justify;
+            font-size: 16px;
+            text-align: left;
             padding: 5px 10px 15px;
         }
     }
@@ -66,36 +57,44 @@ nav {
  */
 
 .list {    
-    display: block;
-    padding: 5px;
+    border: 1px solid #f4f4f4;
+    box-shadow: 0 4px 2px #e5e5e5;
+    border-radius: 4px;    
+    margin: 15px auto;
+    display: inline-flex;
+     
+     &:hover {
+         box-shadow: 0 14px 12px #d4d4d4;
+         transition: margin .5 fade;
+          
+     }
     
     .list-wrapper {   
-        display: inline-block;
+       display: inline-flex;
+       justify-content:  center;
         
         .l-image {
             width: 30%;
             max-width: 80px;
-            height: 80px; 
-            float: left;
+            height: 80px;
             
             img {
                 width: 100%;
                 height: auto;
             }
         }
-            
-        .l-title {
-            font-weight: bold;
-            font-size: 18px;
-            margin: 0;
-        }
         
         .l-content { 
-            width: auto;
             overflow: hidden;
-            font-size: 12px;
-            padding-left: 12px;
-            text-align: justify; 
+            font-size: 16px;
+            text-align: left;
+            padding: 8px 15px 0;
+            
+             .l-title {
+                 font-weight: bold;
+                 font-size: 18px;
+                 margin: 0;
+             }
         }
     }
 }
