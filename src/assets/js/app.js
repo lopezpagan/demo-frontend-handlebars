@@ -2,7 +2,24 @@
  * Site Main JS
  */ 
 
-(function($){  
+(function($){
+     
+     function checkBootstrap(){
+          var bootstrap_enabled = (typeof $().modal == 'function');
+
+          if (bootstrap_enabled) {
+               console.log('Bootstrap is Loaded!');
+          } else {
+               console.log('Bootstrap not installed!');
+          }
+     }
+     
+     checkBootstrap();
+     
+     $('.carousel').carousel({
+       interval: 2000
+     });
+     
     //SmothScroll
     $('a.page-scroll').bind('click', function(event) {
         var $ele = $(this);

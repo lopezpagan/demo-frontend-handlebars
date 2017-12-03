@@ -2,7 +2,7 @@ html,
 body,
 form {
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 input[type=text] {
@@ -11,8 +11,6 @@ input[type=text] {
 
 p { margin: 0; }
 a {
-    color: #666;
     &:hover {
-        color: #666;
     }
 }

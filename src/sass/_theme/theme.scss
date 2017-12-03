@@ -15,17 +15,47 @@ body {
 .main {
     
     .header { 
-        background-color: #333;
+        background-color: #0D0912;
         color: #fcfcfc;
          
          .page-header {
               
               h1.title {
-                   
+                 font-weight: 600;                   
               }
               .subtitle { 
+                 font-size: 24px;
+                 font-weight: 100;
+              } 
+              
+              .btn-cta-on, .btn-cta-off {                   
+                   border: 2px solid;
+                   margin: auto;
                    
-              }              
+              }
+              .btn-cta-on { 
+                   color: #FFFFFF;
+                   background-color: #3AFFA1;
+                   border: 2px solid #3AFFA1; 
+                   
+                   &:hover {
+                        color: #FFFFFF;
+                        background-color: transparent;
+                        border: 2px solid #3AFFA1;
+                   }
+                   
+              }
+              .btn-cta-off { 
+                   color: #FFFFFF;
+                   background-color: transparent;
+                   border: 2px solid #3AFFA1; 
+                   
+                   &:hover {
+                        color: #FFFFFF;
+                        background-color: #3AFFA1;
+                        border: 2px solid #3AFFA1; 
+                   }
+              }
          }
     }
     
@@ -37,7 +67,7 @@ body {
     }
  
     .footer {
-        background-color: #333;
+        background-color: #0D0912;
         color: #fcfcfc; 
     }
 }
@@ -48,38 +78,39 @@ body {
 nav {
     
     &.navbar {  
-         background-color: #333; 
+         background-color: #0D0912; 
          margin-bottom: 0;
          
         .navbar-brand { 
-             
+              background-color: #FB1D5E;              
         }
      
          ul.navbar-nav {
-              color: #e4e4e4; 
-              
+              color: #ffffff; 
               li {                    
-                   color: #e4e4e4;
+                   color: #ffffff;
+                   font-size: 22px;
+                   font-weight: 100;
                    
                    a {
                         background-color: transparent;
-                        color: #e4e4e4;
+                        color: #ffffff;
                         &:hover {                   
                              background-color: transparent;
-                             color: yellow;
+                             color: #FB1D5E;
                              transition: color .5s fade;
                         }
-                        &:active {                   
+                        &.active {                   
                              background-color: transparent;
-                             color: #fff;
+                             color: #FB1D5E;
                         }
-                   }
+                   }                 
               }
          }
          
          .navbar-toggle {
               .icon-bar {
-                   background-color: #f4f4f4; 
+                   background-color: #FB1D5E; 
               }
          }
          
@@ -87,64 +118,45 @@ nav {
 }
 
 /**
- * Card Module
+ * Card Module Colors
  */
         
 .cards {
-     margin-bottom: 50px;
-     
      h2.title {
-       color: #666;
-       text-align: center;
-       font-size: 32px;
-       font-weight: bold;
-       margin-bottom: 30px; 
+       color: #0D0912;
+       text-align: left;
      }
+     a, a:hover { text-decoration: none; }
 }
 
-.card {    
-    .card-wrapper {
-         border: 1px solid #f4f4f4;
-         box-shadow: 0 24px 22px #e5e5e5;
-         border-radius: 4px;
-         overflow: hidden;
-                
-        .c-title { color: #091AC5; }
-        .c-img {}
-        .c-content { color: #666; }
+.card {   
+    .card-wrapper {                
+        .c-title { color: #FB1D5E; }
+        .c-image {}
+        .c-content { color: #0D0912; }
     }
 }
 
 /**
- * List Module
+ * List Module Colors
  */
         
 .lists {
-     margin-bottom: 50px;
-     
      h2.title {
-       color: #666;
-       text-align: center;
-       font-size: 32px;
-       font-weight: bold;
-       margin-bottom: 30px; 
+       color: #0D0912;
+       text-align: left;
      }
+     a, a:hover { text-decoration: none; }
 }
 
 .list {        
     .list-wrapper {   
-        
-        .l-image {
-            border: 1px solid #ccc;
-        }
             
-        .l-title { color: #091AC5; }
+        .l-title { color: #FB1D5E; }
+         
+         .l-image {}
         
-        .l-content { color: #666; }
-    }
-    
-    &:last-child {
-        border-bottom: 0;
+        .l-content { color: #0D0912; }
     }
            
     &:nth-of-type(odd) {

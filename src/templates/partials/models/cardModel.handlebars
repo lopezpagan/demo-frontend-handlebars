@@ -1,13 +1,13 @@
 {{# cards }}
-    <div class="card col-xs-12 col-sm-6 col-md-4">
+    <div class="card col-xs-12 col-sm-6 col-md-6">
         <div class="card-wrapper">
-            <div class="c-img">
-                <a href="#" title="Pictures">
-                    <img src="./assets/img/pictures.png" alt="Pictures">
+            <div class="c-image"> 
+                <a href="{{image}}" title="{{name}}" target="_blank">
+                    <img src="{{image}}" alt="Pictures">
                 </a>
             </div>
             <div class="c-title">{{name}}</div>
-            <div class="c-content">Vitae explicabo esse ipsa atque, voluptate a nostrum inventore neque repudiandae recusandae.</div>
+            <div class="c-content">{{description}}</div>
         </div>  
     </div>
 {{/ cards }}

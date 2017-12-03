@@ -100,10 +100,10 @@ gulp.task('handlebars', function () {
     console.log('***** COMPILE HANDLEBARS *****');
      
     var options = require(src+'dbs/hdbOptions');
+    var helpers = require(src+'dbs/hdbHelpers');
         //data = require(src+''dbs/hdbData');   //json data
     
     var templateData = {
-        pageTitle: 'Page Title',
         cards: data.cards,
         lists: data.lists
     }

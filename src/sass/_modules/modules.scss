@@ -17,15 +17,23 @@ nav {
         }
     }
 }
-
 /**
  * Card Module
  */
+        
+.cards {
+     margin-bottom: 50px;
+     
+     h2.title { margin-bottom: 30px; font-size: 32px; font-weight: 200; }
+}
 
 .card {
     margin-bottom: 15px;
     
     .card-wrapper {
+         box-shadow: 0 24px 22px #e5e5e5;
+         border-radius: 4px;
+         overflow: hidden;
      
           &:hover {
               box-shadow: 0 14px 12px #d4d4d4;
@@ -33,34 +41,41 @@ nav {
 
           }
          
-        .c-title {
-             font-weight: bold;
-             font-size: 22px;
-             padding: 15px 10px 5px;
-        }
-        .c-img {
+        .c-title { 
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 20px 0; 
+         }
+         
+        .c-image {
+            background-color: #BEBEBE;
             img {
                 width: 100%;
                 height: auto;
             }
         }
+         
         .c-content {
-            font-size: 16px;
-            text-align: left;
-            padding: 5px 10px 15px;
+            padding: 5px 20px 20px;
         }
     }
 }
 
+
 /**
  * List Module
  */
+        
+.lists {
+     margin-bottom: 50px;
+     
+     h2.title { margin-bottom: 30px; font-size: 32px; font-weight: 200;  }
+}
 
 .list {    
-    border: 1px solid #f4f4f4;
     box-shadow: 0 4px 2px #e5e5e5;
     border-radius: 4px;    
-    margin: 15px auto;
+    margin: 15px 15px 15px auto;
     display: inline-flex;
      
      &:hover {
@@ -71,29 +86,34 @@ nav {
     
     .list-wrapper {   
        display: inline-flex;
-       justify-content:  center;
+       justify-content:  left;
         
         .l-image {
+            background-color: #BEBEBE;
             width: 30%;
             max-width: 80px;
             height: 80px;
+            overflow: hidden;
             
             img {
-                width: 100%;
-                height: auto;
+                width: auto;
+                height: 80px;
             }
         }
         
         .l-content { 
+            width: 70%;
+            height: 70px;
             overflow: hidden;
             font-size: 16px;
+            line-height: 18px;
             text-align: left;
-            padding: 8px 15px 0;
+            padding: 10px 15px 0;
             
              .l-title {
                  font-weight: bold;
                  font-size: 18px;
-                 margin: 0;
+                 margin: 0 0 5px 0;
              }
         }
     }
