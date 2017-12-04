@@ -1,0 +1,20 @@
+@-moz-keyframes spin {
+    to { -moz-transform: rotate(359deg); }
+}
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(359deg); }
+}
+@keyframes spin {
+    to {transform:rotate(359deg);}
+}
+
+.spin {
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+     
+     .infinite {
+         animation-iteration-count: infinite;          
+     }
+}

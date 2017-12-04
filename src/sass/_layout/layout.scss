@@ -4,21 +4,27 @@ nav {
 
 .main {  
      
-    .header {       
-        display: block; 
+    .header { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         margin-bottom: 30px;
+        height: 40vh;
         
          &.no-margin-bottom {
              margin-bottom: 0;              
          }
          
+         &.front {
+              height: 60vh;
+         }
+         
+         &.projects {
+              height: auto;
+         }
+         
          .page-header {
-             width: 100%;
-             min-height: 300px;
-             display: flex;
-             flex-direction: column;
-             align-content: left;
-             justify-content: center;
              border-bottom: 0;
          }
     }

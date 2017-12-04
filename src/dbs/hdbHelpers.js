@@ -14,7 +14,7 @@ var  hdb = require('handlebars');
           
      });
 
-    hdb.registerHelper('helperMissing', function() {
+    /*hdb.registerHelper('helperMissing', function() {
        var options = arguments[arguments.length - 1];
            console.log (hdb.Exception('Unknown field: ' + this.name ));
-    });
+    });*/

@@ -4,6 +4,7 @@
 @import "vendor/susy";
 @import "vendor/su";
 @import "vendor/bootstrap";
+@import "vendor/font-awesome";
 
 /**
  * Setup
@@ -26,4 +27,6 @@
 //Fonts styles
 @import "_theme/fonts";
 // Theme styles
-@import "_theme/theme";  
+@import "_theme/theme"; 
+// Theme styles
+@import "_theme/animation";  
