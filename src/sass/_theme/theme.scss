@@ -27,35 +27,7 @@ body {
                  font-size: 24px;
                  font-weight: 100;
               } 
-              
-              .btn-cta-on, .btn-cta-off {                   
-                   border: 2px solid;
-                   margin: auto;
-                   
-              }
-              .btn-cta-on { 
-                   color: #FFFFFF;
-                   background-color: #3AFFA1;
-                   border: 2px solid #3AFFA1; 
-                   
-                   &:hover {
-                        color: #FFFFFF;
-                        background-color: transparent;
-                        border: 2px solid #3AFFA1;
-                   }
-                   
-              }
-              .btn-cta-off { 
-                   color: #FFFFFF;
-                   background-color: transparent;
-                   border: 2px solid #3AFFA1; 
-                   
-                   &:hover {
-                        color: #FFFFFF;
-                        background-color: #3AFFA1;
-                        border: 2px solid #3AFFA1; 
-                   }
-              }
+          
          }
     }
     
@@ -115,6 +87,214 @@ nav {
          }
          
     }
+}
+
+
+
+/**
+ * Buttons Colors 
+ */
+
+
+.btn-cta {
+     
+     &.green-on { 
+         color: #0D0912;
+         background-color: #3AFFA1;
+         border: 2px solid #3AFFA1;
+         box-shadow: 0 0 40px 40px #3AFFA1 inset;
+         transition: box-shadow 300ms ease-in-out, background-color 300ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #0D0912;
+              background-color: #3AFFA1;
+              border: 2px solid #3AFFA1;
+              box-shadow: 0 0 40px 40px #3AFFA1 inset;
+              transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+
+     }
+     
+     &.green-off { 
+         color: #3AFFA1;
+         background-color: transparent;
+         border: 2px solid #3AFFA1; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, background-color 300ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #0D0912;
+              background-color: #3AFFA1;
+              border: 2px solid #3AFFA1;
+              box-shadow: 0 0 40px 40px #3AFFA1 inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.green-onoff { 
+         color: #0D0912;
+         background-color: #3AFFA1;
+         border: 2px solid #3AFFA1; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, background-color 300ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #3AFFA1;
+              background-color: transparent;
+              border: 2px solid #3AFFA1;
+              box-shadow: 0 0 40px 40px transparent inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.purple-on { 
+         color: #FFFFFF;
+         background-color: #8700FB;
+         border: 2px solid #8700FB;
+         box-shadow: 0 0 40px 40px #8700FB inset;
+         transition: box-shadow 300ms ease-in-out, background-color 300ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FFFFFF;
+              background-color: #8700FB;
+              border: 2px solid #8700FB;
+              box-shadow: 0 0 40px 40px #8700FB inset;
+              transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+
+     }
+     
+     &.purple-off { 
+         color: #8700FB;
+         background-color: transparent;
+         border: 2px solid #8700FB; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, background-color 300ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FFFFFF;
+              background-color: #8700FB;
+              border: 2px solid #8700FB;
+              box-shadow: 0 0 40px 40px #8700FB inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.purple-onoff { 
+         color: #FFFFFF;
+         background-color: #8700FB;
+         border: 2px solid #8700FB; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out, background-color 300ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FFFFFF;
+              background-color: transparent;
+              border: 2px solid #8700FB;
+              box-shadow: 0 0 40px 40px transparent inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.red-on { 
+         color: #FFFFFF;
+         background-color: #FB1D5E;
+         border: 2px solid #FB1D5E;
+         box-shadow: 0 0 40px 40px #FB1D5E inset;
+         transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FFFFFF;
+              background-color: #FB1D5E;
+              border: 2px solid #FB1D5E;
+              box-shadow: 0 0 40px 40px transparent inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+
+     }
+     
+     &.red-off { 
+         color: #FB1D5E;
+         background-color: transparent;
+         border: 2px solid #FB1D5E; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FB1D5E;
+              background-color: transparent;
+              border: 2px solid #FB1D5E;
+              box-shadow: 0 0 40px 40px #FB1D5E inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.red-onoff { 
+         color: #FFFFFF;
+         background-color: #FB1D5E;
+         border: 2px solid #FB1D5E; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FFFFFF;
+              background-color: transparent;
+              border: 2px solid #FB1D5E;
+              box-shadow: 0 0 40px 40px transparent inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.blue-on { 
+         color: #FFFFFF;
+         background-color: #14A3E5;
+         border: 2px solid #14A3E5;
+         box-shadow: 0 0 40px 40px #14A3E5 inset;
+         transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #FFFFFF;
+              background-color: #14A3E5;
+              border: 2px solid #14A3E5;
+              box-shadow: 0 0 40px 40px transparent inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+
+     }
+     
+     &.blue-off { 
+         color: #14A3E5;
+         background-color: transparent;
+         border: 2px solid #14A3E5; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #14A3E5;
+              background-color: transparent;
+              border: 2px solid #14A3E5;
+              box-shadow: 0 0 40px 40px #14A3E5 inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     &.blue-onoff { 
+         color: #FFF;
+         background-color: #14A3E5;
+         border: 2px solid #14A3E5; 
+         box-shadow: 0 0 40px 40px transparent inset;
+         transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+
+         &:hover {
+              color: #14A3E5;
+              background-color: transparent;
+              border: 2px solid #14A3E5;
+              box-shadow: 0 0 40px 40px transparent inset;
+              transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out, background-color 600ms ease-in-out, border-radius 300ms ease-in-out;
+         }
+     }
+     
+     
 }
 
 /**

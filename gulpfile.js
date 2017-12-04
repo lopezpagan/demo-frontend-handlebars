@@ -1,4 +1,9 @@
 /**
+* @author  Tony López <tony@lopezpagan.com>
+* @website lopezpagan.com
+*/
+
+/**
  * Import plugins
  */
 var gulp = require('gulp');
@@ -32,6 +37,10 @@ const root = '/';
 var src = './src/';
 var dest = './dist/';
 
+
+/**
+ * Image Optimization
+ */
 gulp.task('imagemin', function() {
     return gulp.src(src+'assets/img/**/*')
         .pipe(imagemin({
@@ -42,6 +51,9 @@ gulp.task('imagemin', function() {
         .pipe(gulp.dest(dest+'assets/img/'));
 });
 
+/**
+ * Minify HTML
+ */
 gulp.task('htmlmin', function() {
   console.log('***** HTML MIN *****');
      
@@ -50,12 +62,18 @@ gulp.task('htmlmin', function() {
             .pipe(gulp.dest(dest));
 });
 
+/**
+ * Display Json Files
+ */
 gulp.task("dbs", function() {
     console.log('***** NEW DATA AVAILABLE *****');
     console.log(data.cards);
     console.log(data.lists);
 });
 
+/**
+ * SASS to CSS
+ */
 gulp.task('sass', function() {
     console.log('***** SASS *****');
      
@@ -68,6 +86,9 @@ gulp.task('sass', function() {
      
 });
 
+/**
+ * Minify JS
+ */
 gulp.task('uglify', function() {
     console.log('***** UGLIFY *****');
      
@@ -76,6 +97,9 @@ gulp.task('uglify', function() {
         .pipe(gulp.dest(dest+'assets/js'));
 });
 
+/**
+ * Copy and minify manifest.json (PWA)
+ */
 gulp.task('manifest', function() {
      console.log('***** MANIFEST *****');
      
@@ -84,6 +108,10 @@ gulp.task('manifest', function() {
             .pipe(gulp.dest(dest));
 });
 
+
+/**
+ * Generate Service Worker (PWA)
+ */
 gulp.task('generate-service-worker', callback => {
   console.log('***** GENERATE SERVICE WORKER *****');
      
@@ -96,6 +124,9 @@ gulp.task('generate-service-worker', callback => {
   }, callback);
 });
 
+/**
+ * Handlebars Templating
+ */
 gulp.task('handlebars', function () { 
     console.log('***** COMPILE HANDLEBARS *****');
      
@@ -105,7 +136,8 @@ gulp.task('handlebars', function () {
     
     var templateData = {
         cards: data.cards,
-        lists: data.lists
+        lists: data.lists,
+        pannels: data.pannels
     }
  
     return gulp.src(src+'templates/*.handlebars')
@@ -120,12 +152,15 @@ gulp.task('handlebars', function () {
         .pipe(gulp.dest(dest));
 });
 
+/**
+ * Watch files
+ */
 gulp.task('watch', function() {     
     console.log('***** WATCH & LISTEN *****');
      
     livereload.listen();
      
-    //gulp.watch(src+'dbs/**/*.js', ['dbs']);
+    gulp.watch(src+'dbs/**/*.js', ['dbs']);
     gulp.watch(src+'**/*.handlebars', ['handlebars']);
     gulp.watch(src+'sass/**/*.scss', ['sass']);
     gulp.watch(src+'lib/**/*.js', ['uglify']);
@@ -142,12 +177,18 @@ gulp.task('watch', function() {
                
 });
 
+/**
+ * Live Reload
+ */
 gulp.task('livereload', function() {
     console.log('***** LIVERELOAD *****');
      
     return gulp.pipe(livereload());
 });
 
+/**
+ * Start Webserver
+ */
 gulp.task('webserver', function() {
   console.log('***** START WEBSERVER *****');
      
@@ -161,4 +202,8 @@ gulp.task('webserver', function() {
     }));
 });
     
+
+/**
+ * Default task
+ */
 gulp.task('default', ['dbs', 'handlebars', 'sass', 'uglify', 'imagemin', 'manifest', 'generate-service-worker', 'htmlmin']);

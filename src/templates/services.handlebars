@@ -15,17 +15,15 @@
 </head> 
 <body>   
     <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p> 
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
     {{> navigation }}
       
     <div class="main"> 
        
-        {{> headers/frontHeader }}  
-         
-        {{> models/pannelModel }} 
-        
+        {{> headers/servicesHeader }}  
+          
         <div class="container"> 
             <div class="row">
                  <div class="col-xs-12 col-md-8">
@@ -34,7 +32,7 @@
                                <h2 class="title"> Cards Title Here! </h2> 
 
                                <div class="row">
-                                    {{> models/cardModel }} 
+                                    {{> models/cardModel }}
                                </div> 
 
                            </div>

@@ -21,7 +21,13 @@ var data = {
             { name: 'Tweeting', image: 'assets/img/pictures.png', description: 'Vitae explicabo esse ipsa atque, voluptate a nostrum inventore neque repudiandae recusandae.' }, 
             { name: 'Linking', image: 'assets/img/pictures.png', description: 'Vitae explicabo esse ipsa atque, voluptate a nostrum inventore neque repudiandae recusandae.' }, 
             { name: 'Learning', image: 'assets/img/pictures.png', description: 'Vitae explicabo esse ipsa atque, voluptate a nostrum inventore neque repudiandae recusandae.' }    
+        ],
+        pannels: [
+            { name: 'Sharing', class: 'green', image: 'assets/img/pictures.png', description: 'Vitae explicabo esse ipsa atque, voluptate a nostrum inventore neque repudiandae recusandae.' },
+            { name: 'Handling', class: 'red', image: 'assets/img/pictures.png', description: 'Vitae explicabo esse ipsa atque, voluptate a nostrum inventore neque repudiandae recusandae.' },
+            { name: 'Producing', class: 'purple', image: 'assets/img/pictures.png', description: 'Vitae explicabo esse ipsa atque, voluptate a nostrum inventore neque repudiandae recusandae.' }, 
+            { name: 'Guiding', class: 'blue', image: 'assets/img/pictures.png', description: 'Vitae explicabo esse ipsa atque, voluptate a nostrum inventore neque repudiandae recusandae.' }  
         ]
-    }
+    } 
 
 module.exports = data;

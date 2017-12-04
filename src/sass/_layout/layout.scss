@@ -7,6 +7,10 @@ nav {
     .header {       
         display: block; 
         margin-bottom: 30px;
+        
+         &.no-margin-bottom {
+             margin-bottom: 0;              
+         }
          
          .page-header {
              width: 100%;
