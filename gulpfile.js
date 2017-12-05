@@ -98,6 +98,16 @@ gulp.task('uglify', function() {
 });
 
 /**
+ * Copy fonts
+ */
+gulp.task('fonts', function() {
+     console.log('***** FONTS *****');
+     
+     return gulp.src(src+'assets/fonts/**/*')
+            .pipe(gulp.dest(dest+'assets/fonts/'));
+});
+
+/**
  * Copy and minify manifest.json (PWA)
  */
 gulp.task('manifest', function() {
@@ -166,8 +176,7 @@ gulp.task('watch', function() {
     gulp.watch(src+'lib/**/*.js', ['uglify']);
     gulp.watch(src+'assets/js/**/*.js', ['uglify']);
     gulp.watch(src+'assets/img/**/*', ['imagemin']);
-    //gulp.watch(src+'manifest.json', ['manifest']);
-    gulp.watch([src+'*.html', src+'**/*.handlebars']/*, ['generate-service-worker']*/);
+    gulp.watch([src+'*.html', src+'**/*.handlebars']);
     gulp.watch(src+'*.html', ['htmlmin']);
     
     gulp.watch([dest+'assets/css/style.css', dest+'assets/js/app.js', dest+'sw.js', dest+'assets/img/**/*', dest+'manifest.json', dest+'*.html'],
@@ -206,4 +215,4 @@ gulp.task('webserver', function() {
 /**
  * Default task
  */
-gulp.task('default', ['dbs', 'handlebars', 'sass', 'uglify', 'imagemin', 'manifest', 'generate-service-worker', 'htmlmin']);
+gulp.task('default', ['dbs', 'handlebars', 'fonts', 'sass', 'uglify', 'imagemin', 'manifest', 'generate-service-worker', 'htmlmin']);
