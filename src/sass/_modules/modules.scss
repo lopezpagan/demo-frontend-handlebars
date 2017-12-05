@@ -18,6 +18,30 @@ nav {
         }
     }
 }
+
+/**
+ * Links
+ */
+
+a {
+     color: #FB1D5E;
+     margin-right: 10px;
+     
+     &:hover { 
+          color: #0D0912; 
+          transition: color 300ms;
+     }
+     
+     .fa {
+          transition: all 100ms ease-in-out;
+          
+          &:hover { 
+               color: #0D0912; 
+               transform: scale(1.2);
+          }          
+     }
+}
+
 /**
  * Buttons
  */
@@ -120,17 +144,19 @@ nav {
     border-radius: 4px;    
     margin: 15px 15px 15px auto;
     display: inline-flex;
+    transition: all 100ms ease-in-out;
      
      &:hover {
          box-shadow: 0 14px 12px #d4d4d4;
          transition: margin .5 fade;
+         transform: scale(1.1);
           
      }
     
     .list-wrapper {   
        display: inline-flex;
        justify-content:  left;
-        
+                 
         .l-image {
             background-color: #BEBEBE;
             width: 30%;
@@ -161,8 +187,86 @@ nav {
         }
     }
 }
+/**
+ * List Block Module
+ */
+        
+.blocks {
+     margin-bottom: 50px;
+     
+     h2.title { margin-bottom: 30px; font-size: 32px; font-weight: 200;  }
+}
 
+.block {    
+    box-shadow: 0 4px 2px #e5e5e5;
+    border-radius: 4px;    
+    margin: 15px 15px 15px auto;
+    display: flex;
+    transition: all 100ms ease-in-out;
+     
+     &:hover {
+         box-shadow: 0 14px 12px #d4d4d4;
+         transition: margin .5 fade;
+         transform: scale(1);
+          
+     }
+    
+    .block-wrapper {   
+       display: flex;
+       justify-content:  flex-start;
+                 
+        .b-image {
+            background-color: #BEBEBE; 
+            display: flex;
+            flex: 40%;
+            justify-content:  flex-start;
+            align-content: flex-start;
+            max-width: 180px;
+            height: 180px;
+            overflow: hidden;
+            
+            img {
+                width: auto;
+                height: 80px;
+            }
+        }
+        
+        .b-content { 
+            display: flex;
+            flex-direction: column;
+            flex: 60%;
+            justify-content:  center;
+            align-content: center;
+            overflow: hidden;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: left;
+            padding: 0 15px 0;
+            
+             .b-title {
+                 font-weight: bold;
+                 font-size: 26px;
+                 margin: 0 0 15px 0;
+             }
+        }
+    }
+}
 
+/**
+ * Block Content Module
+ */
+.block-content {
+     
+}
+
+/**
+ * Social 
+ */
+.block-social {
+     h3.title {}
+     
+     .icons {}
+}
 
 /**
  * Pannels Module

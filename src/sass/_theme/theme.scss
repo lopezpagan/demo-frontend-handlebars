@@ -344,3 +344,30 @@ nav {
         background-color: #f4f4f4;
     }
 }
+
+/**
+ * Block Module Colors
+ */
+        
+.blocks {
+     h2.title {
+       color: #0D0912;
+       text-align: left;
+     }
+     a, a:hover { text-decoration: none; }
+}
+
+.block {        
+    .block-wrapper {   
+            
+        .b-title { color: #FB1D5E; }
+         
+        .b-image {}
+        
+        .b-content { color: #0D0912; }
+    }
+           
+    &:nth-of-type(odd) {
+        background-color: #f4f4f4;
+    }
+}
