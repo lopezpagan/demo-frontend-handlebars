@@ -15,7 +15,7 @@ Run *gulp*
 To watch and start server:
 Run *gulp watch webserver*
 
-* about.html (basic html with service worker script included)
+* demo.html (basic html with service worker script included)
 * manifiest.json (for pwa)
 * --dist (for the compiled files)
 * --src  (for the source files)
