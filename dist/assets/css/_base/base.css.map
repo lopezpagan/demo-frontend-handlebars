@@ -1,1 +1,0 @@
-{"version":3,"sources":["base.css"],"names":[],"mappings":"AAAA,eAAe,SAAS,SAAS,CAAC,iBAAiB,qBAAqB,CAAC,EAAE,QAAQ,CAAC","file":"_base/base.css","sourcesContent":["html,body,form{margin:0;padding:0}input[type=text]{border:1px solid #999}p{margin:0}\n"],"sourceRoot":"/source/"}
